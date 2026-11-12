@@ -1,0 +1,50 @@
+﻿
+========== SYNC ==========
+[ 0.002s] 01 START | wait=0.000s | in-flight=1 | heap=12.00 MiB | main
+[ 1.406s] 01 END   | wait=0.000s | in-flight=0 | heap=24.00 MiB | main
+[ 1.407s] 02 START | wait=0.000s | in-flight=1 | heap=24.00 MiB | main
+[ 2.663s] 02 END   | wait=0.000s | in-flight=0 | heap=11.21 MiB | main
+[ 2.664s] 03 START | wait=0.000s | in-flight=1 | heap=11.21 MiB | main
+[ 3.913s] 03 END   | wait=0.000s | in-flight=0 | heap=15.21 MiB | main
+[ 3.914s] 04 START | wait=0.000s | in-flight=1 | heap=15.21 MiB | main
+[ 5.147s] 04 END   | wait=0.000s | in-flight=0 | heap=15.21 MiB | main
+[ 5.148s] 05 START | wait=0.000s | in-flight=1 | heap=15.21 MiB | main
+[ 6.372s] 05 END   | wait=0.000s | in-flight=0 | heap=19.21 MiB | main
+[ 6.373s] 06 START | wait=0.000s | in-flight=1 | heap=19.21 MiB | main
+[ 7.607s] 06 END   | wait=0.000s | in-flight=0 | heap=19.21 MiB | main
+[ 7.608s] 07 START | wait=0.000s | in-flight=1 | heap=19.21 MiB | main
+[ 8.839s] 07 END   | wait=0.000s | in-flight=0 | heap=23.21 MiB | main
+[ 8.841s] 08 START | wait=0.000s | in-flight=1 | heap=23.21 MiB | main
+[10.064s] 08 END   | wait=0.000s | in-flight=0 | heap=23.21 MiB | main
+[10.065s] 09 START | wait=0.000s | in-flight=1 | heap=23.21 MiB | main
+[11.284s] 09 END   | wait=0.000s | in-flight=0 | heap=23.21 MiB | main
+[11.286s] 10 START | wait=0.000s | in-flight=1 | heap=23.21 MiB | main
+[12.509s] 10 END   | wait=0.000s | in-flight=0 | heap=13.77 MiB | main
+Total: 12.511s | Peak in-flight: 1 | Heap baseline/end/event peak: 12.00/13.77/24.00 MiB
+힙은 서버를 포함한 JVM 전체이며 GC의 영향을 받습니다. 이벤트 시점의 최대값이고 실제 순간 최대값은 아닙니다.
+완료된 응답 본문은 보관하지 않습니다. 진행 중 요청 수는 TCP 연결 수가 아닙니다.
+
+========== ASYNC ==========
+[ 0.000s] 01 START | wait=0.000s | in-flight=1 | heap=17.77 MiB | main
+[ 0.502s] 02 START | wait=0.494s | in-flight=2 | heap=17.77 MiB | main
+[ 1.001s] 03 START | wait=0.496s | in-flight=3 | heap=17.77 MiB | main
+[ 1.226s] 01 END   | wait=0.000s | in-flight=2 | heap=21.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 1.501s] 04 START | wait=0.497s | in-flight=3 | heap=21.77 MiB | main
+[ 1.732s] 02 END   | wait=0.000s | in-flight=2 | heap=25.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 2.001s] 05 START | wait=0.495s | in-flight=3 | heap=25.77 MiB | main
+[ 2.227s] 03 END   | wait=0.000s | in-flight=2 | heap=33.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 2.502s] 06 START | wait=0.497s | in-flight=3 | heap=33.77 MiB | main
+[ 2.723s] 04 END   | wait=0.000s | in-flight=2 | heap=33.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 3.001s] 07 START | wait=0.496s | in-flight=3 | heap=33.77 MiB | main
+[ 3.241s] 05 END   | wait=0.000s | in-flight=2 | heap=37.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 3.502s] 08 START | wait=0.498s | in-flight=3 | heap=37.77 MiB | main
+[ 3.716s] 06 END   | wait=0.000s | in-flight=2 | heap=37.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 4.002s] 09 START | wait=0.497s | in-flight=3 | heap=37.77 MiB | main
+[ 4.220s] 07 END   | wait=0.000s | in-flight=2 | heap=41.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 4.503s] 10 START | wait=0.496s | in-flight=3 | heap=41.77 MiB | main
+[ 4.715s] 08 END   | wait=0.000s | in-flight=2 | heap=41.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 5.234s] 09 END   | wait=0.000s | in-flight=1 | heap=45.77 MiB | ForkJoinPool.commonPool-worker-1
+[ 5.726s] 10 END   | wait=0.000s | in-flight=0 | heap=45.77 MiB | ForkJoinPool.commonPool-worker-1
+Total: 5.727s | Peak in-flight: 3 | Heap baseline/end/event peak: 17.77/45.77/45.77 MiB
+힙은 서버를 포함한 JVM 전체이며 GC의 영향을 받습니다. 이벤트 시점의 최대값이고 실제 순간 최대값은 아닙니다.
+완료된 응답 본문은 보관하지 않습니다. 진행 중 요청 수는 TCP 연결 수가 아닙니다.

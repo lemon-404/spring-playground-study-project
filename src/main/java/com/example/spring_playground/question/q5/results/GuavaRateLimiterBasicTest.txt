@@ -1,0 +1,92 @@
+﻿
+========== Case 1 - 기본 ==========
+[  0.001s] Task 01 | START | wait=0.000s | main
+[  0.122s] Task 01 | END   | wait=0.000s | main
+[  0.502s] Task 02 | START | wait=0.378s | main
+[  0.511s] Task 02 | END   | wait=0.000s | main
+[  1.001s] Task 03 | START | wait=0.488s | main
+[  1.011s] Task 03 | END   | wait=0.000s | main
+[  1.501s] Task 04 | START | wait=0.488s | main
+[  1.508s] Task 04 | END   | wait=0.000s | main
+[  2.001s] Task 05 | START | wait=0.490s | main
+[  2.009s] Task 05 | END   | wait=0.000s | main
+[  2.508s] Task 06 | START | wait=0.490s | main
+[  2.518s] Task 06 | END   | wait=0.000s | main
+[  3.000s] Task 07 | START | wait=0.481s | main
+[  3.008s] Task 07 | END   | wait=0.000s | main
+[  3.503s] Task 08 | START | wait=0.491s | main
+[  3.511s] Task 08 | END   | wait=0.000s | main
+[  4.003s] Task 09 | START | wait=0.488s | main
+[  4.011s] Task 09 | END   | wait=0.000s | main
+[  4.502s] Task 10 | START | wait=0.488s | main
+[  4.511s] Task 10 | END   | wait=0.000s | main
+총 실행 시간: 4.513초
+
+========== Case 2 - 200ms 지연 ==========
+[  0.000s] Task 01 | START | wait=0.000s | main
+[  0.224s] Task 01 | END   | wait=0.000s | main
+[  0.500s] Task 02 | START | wait=0.275s | main
+[  0.725s] Task 02 | END   | wait=0.000s | main
+[  1.002s] Task 03 | START | wait=0.274s | main
+[  1.212s] Task 03 | END   | wait=0.000s | main
+[  1.501s] Task 04 | START | wait=0.287s | main
+[  1.714s] Task 04 | END   | wait=0.000s | main
+[  2.001s] Task 05 | START | wait=0.285s | main
+[  2.218s] Task 05 | END   | wait=0.000s | main
+[  2.501s] Task 06 | START | wait=0.281s | main
+[  2.717s] Task 06 | END   | wait=0.000s | main
+[  3.001s] Task 07 | START | wait=0.282s | main
+[  3.219s] Task 07 | END   | wait=0.000s | main
+[  3.501s] Task 08 | START | wait=0.280s | main
+[  3.727s] Task 08 | END   | wait=0.000s | main
+[  4.001s] Task 09 | START | wait=0.272s | main
+[  4.226s] Task 09 | END   | wait=0.000s | main
+[  4.501s] Task 10 | START | wait=0.273s | main
+[  4.726s] Task 10 | END   | wait=0.000s | main
+총 실행 시간: 4.727초
+
+========== Case 3 - 1200ms 지연 ==========
+[  0.000s] Task 01 | START | wait=0.000s | main
+[  1.219s] Task 01 | END   | wait=0.000s | main
+[  1.220s] Task 02 | START | wait=0.000s | main
+[  2.445s] Task 02 | END   | wait=0.000s | main
+[  2.446s] Task 03 | START | wait=0.000s | main
+[  3.655s] Task 03 | END   | wait=0.000s | main
+[  3.656s] Task 04 | START | wait=0.000s | main
+[  4.870s] Task 04 | END   | wait=0.000s | main
+[  4.871s] Task 05 | START | wait=0.000s | main
+[  6.088s] Task 05 | END   | wait=0.000s | main
+[  6.089s] Task 06 | START | wait=0.000s | main
+[  7.307s] Task 06 | END   | wait=0.000s | main
+[  7.308s] Task 07 | START | wait=0.000s | main
+[  8.527s] Task 07 | END   | wait=0.000s | main
+[  8.528s] Task 08 | START | wait=0.000s | main
+[  9.740s] Task 08 | END   | wait=0.000s | main
+[  9.741s] Task 09 | START | wait=0.000s | main
+[ 10.951s] Task 09 | END   | wait=0.000s | main
+[ 10.952s] Task 10 | START | wait=0.000s | main
+[ 12.165s] Task 10 | END   | wait=0.000s | main
+총 실행 시간: 12.165초
+
+========== Case 4 - 단일 호출 스레드 비동기 HTTP ==========
+[  0.000s] Task 01 | START | wait=0.000s | main
+[  0.501s] Task 02 | START | wait=0.495s | main
+[  1.000s] Task 03 | START | wait=0.498s | main
+[  1.214s] Task 01 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  1.501s] Task 04 | START | wait=0.498s | main
+[  1.712s] Task 02 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  2.003s] Task 05 | START | wait=0.497s | main
+[  2.213s] Task 03 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  2.502s] Task 06 | START | wait=0.496s | main
+[  2.712s] Task 04 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  3.000s] Task 07 | START | wait=0.497s | main
+[  3.214s] Task 05 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  3.501s] Task 08 | START | wait=0.499s | main
+[  3.714s] Task 06 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  4.001s] Task 09 | START | wait=0.497s | main
+[  4.211s] Task 07 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  4.502s] Task 10 | START | wait=0.498s | main
+[  4.711s] Task 08 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  5.211s] Task 09 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+[  5.714s] Task 10 | END   | wait=0.000s | ForkJoinPool.commonPool-worker-1
+총 실행 시간: 5.715초
