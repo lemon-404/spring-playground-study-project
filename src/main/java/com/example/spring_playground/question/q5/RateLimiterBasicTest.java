@@ -16,7 +16,7 @@ import java.util.concurrent.*;
 
 import static com.example.spring_playground.question.q5.async.mock.ExecutorSupport.stopExecutor;
 
-public class GuavaRateLimiterBasicTest {
+public class RateLimiterBasicTest {
 
     private static final long QPS = 2;
     private static final int REQUEST_COUNT = 10;
