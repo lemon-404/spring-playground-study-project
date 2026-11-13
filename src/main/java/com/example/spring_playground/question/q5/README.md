@@ -56,3 +56,11 @@ Trady의 과거 차트 수집은 배포 전 한 번 수행하는 작업이므로
 따라서 Leaky Bucket 방식으로 요청을 일정한 간격에 분산하는 Failsafe의 Smooth RateLimiter로 변경했다.
 
 추가로 일시적인 API 장애에 대응하기 위해 Failsafe의 재시도 기능을 테스트했다. 의도적으로 HTTP 503을 반환하도록 구성한 결과, 일시적인 실패는 재시도 후 성공했으며, 실패가 지속되면 설정한 재시도 횟수를 소진한 뒤 해당 요청을 최종 실패로 처리했다.
+
+### 3.5. 동기식 처리에서 Guava와 Failsafe 비교
+
+실험: [SyncRateLimiterComparisonTest.main(), run()](./SyncRateLimiterComparisonTest.java). 초당 5회, 조건별 10개 요청, 서버 지연 100ms/300ms를 생성 직후와 2초 유휴 후로 나눠 비교했다. `main()`으로 실행하며 [실행 결과](./results/SyncRateLimiterComparisonTest.txt)는 1회 관찰값이다. 연결 초기화와 유휴 시간은 측정에서 제외했다.
+
+100ms 응답의 생성 직후 평균 시작 간격은 Guava 199.357ms, Failsafe 200.111ms로 비슷했다. 유휴 후에는 Guava 112.886ms, Failsafe 199.860ms였다. Guava는 저장된 permit 때문에 요청 10개가 끝날 때까지 기본 간격보다 빠르게 호출될 수 있었다. 이는 지속 가능한 장기 호출 속도를 뜻하지 않는다.
+
+300ms 응답에서는 두 구현 모두 평균 약 307~316ms 간격이었다. 동기식 순차 처리의 응답 대기가 기본 permit 간격 200ms보다 길어, 이 조건에서는 알고리즘에 따른 처리량 차이가 작았다. 시간은 환경과 스케줄링 영향을 받으며 START는 실제 서버 수신 시각이 아니라 HTTP 호출 직전 시각이다.

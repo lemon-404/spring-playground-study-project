@@ -1,0 +1,187 @@
+﻿
+=== Guava SmoothBursty | API=100ms | idle=false ===
+[ 0.001s] 01 START | acquire elapsed=0.612ms | start interval=0.000ms | main
+[ 0.112s] 01 END
+[ 0.206s] 02 START | acquire elapsed=93.933ms | start interval=205.741ms | main
+[ 0.318s] 02 END
+[ 0.393s] 03 START | acquire elapsed=74.600ms | start interval=186.963ms | main
+[ 0.509s] 03 END
+[ 0.592s] 04 START | acquire elapsed=83.063ms | start interval=198.626ms | main
+[ 0.697s] 04 END
+[ 0.793s] 05 START | acquire elapsed=95.277ms | start interval=200.694ms | main
+[ 0.903s] 05 END
+[ 0.995s] 06 START | acquire elapsed=90.809ms | start interval=201.875ms | main
+[ 1.110s] 06 END
+[ 1.194s] 07 START | acquire elapsed=83.698ms | start interval=199.092ms | main
+[ 1.301s] 07 END
+[ 1.395s] 08 START | acquire elapsed=93.076ms | start interval=201.152ms | main
+[ 1.506s] 08 END
+[ 1.594s] 09 START | acquire elapsed=87.003ms | start interval=198.933ms | main
+[ 1.713s] 09 END
+[ 1.795s] 10 START | acquire elapsed=81.393ms | start interval=201.134ms | main
+[ 1.903s] 10 END
+
+=== Failsafe Smooth | API=100ms | idle=false ===
+[ 0.001s] 01 START | acquire elapsed=0.955ms | start interval=0.000ms | main
+[ 0.106s] 01 END
+[ 0.203s] 02 START | acquire elapsed=96.597ms | start interval=202.404ms | main
+[ 0.307s] 02 END
+[ 0.400s] 03 START | acquire elapsed=93.107ms | start interval=197.054ms | main
+[ 0.519s] 03 END
+[ 0.600s] 04 START | acquire elapsed=81.454ms | start interval=200.042ms | main
+[ 0.710s] 04 END
+[ 0.804s] 05 START | acquire elapsed=93.508ms | start interval=203.076ms | main
+[ 0.916s] 05 END
+[ 1.003s] 06 START | acquire elapsed=86.978ms | start interval=199.561ms | main
+[ 1.122s] 06 END
+[ 1.202s] 07 START | acquire elapsed=79.897ms | start interval=199.036ms | main
+[ 1.310s] 07 END
+[ 1.405s] 08 START | acquire elapsed=95.395ms | start interval=203.182ms | main
+[ 1.517s] 08 END
+[ 1.602s] 09 START | acquire elapsed=84.848ms | start interval=197.074ms | main
+[ 1.722s] 09 END
+[ 1.802s] 10 START | acquire elapsed=79.299ms | start interval=199.567ms | main
+[ 1.912s] 10 END
+
+=== Guava SmoothBursty | API=100ms | idle=true ===
+[ 0.000s] 01 START | acquire elapsed=0.012ms | start interval=0.000ms | main
+[ 0.114s] 01 END
+[ 0.115s] 02 START | acquire elapsed=0.016ms | start interval=114.626ms | main
+[ 0.240s] 02 END
+[ 0.240s] 03 START | acquire elapsed=0.010ms | start interval=125.404ms | main
+[ 0.348s] 03 END
+[ 0.348s] 04 START | acquire elapsed=0.010ms | start interval=108.290ms | main
+[ 0.460s] 04 END
+[ 0.461s] 05 START | acquire elapsed=0.018ms | start interval=112.279ms | main
+[ 0.570s] 05 END
+[ 0.571s] 06 START | acquire elapsed=0.022ms | start interval=110.145ms | main
+[ 0.682s] 06 END
+[ 0.682s] 07 START | acquire elapsed=0.011ms | start interval=110.979ms | main
+[ 0.795s] 07 END
+[ 0.796s] 08 START | acquire elapsed=0.011ms | start interval=114.307ms | main
+[ 0.905s] 08 END
+[ 0.906s] 09 START | acquire elapsed=0.011ms | start interval=109.718ms | main
+[ 1.016s] 09 END
+[ 1.016s] 10 START | acquire elapsed=0.010ms | start interval=110.226ms | main
+[ 1.126s] 10 END
+
+=== Failsafe Smooth | API=100ms | idle=true ===
+[ 0.000s] 01 START | acquire elapsed=0.019ms | start interval=0.000ms | main
+[ 0.110s] 01 END
+[ 0.199s] 02 START | acquire elapsed=88.626ms | start interval=198.858ms | main
+[ 0.315s] 02 END
+[ 0.398s] 03 START | acquire elapsed=81.995ms | start interval=199.155ms | main
+[ 0.505s] 03 END
+[ 0.599s] 04 START | acquire elapsed=93.448ms | start interval=201.101ms | main
+[ 0.711s] 04 END
+[ 0.797s] 05 START | acquire elapsed=85.901ms | start interval=198.161ms | main
+[ 0.905s] 05 END
+[ 0.997s] 06 START | acquire elapsed=91.700ms | start interval=199.995ms | main
+[ 1.124s] 06 END
+[ 1.198s] 07 START | acquire elapsed=74.669ms | start interval=201.154ms | main
+[ 1.312s] 07 END
+[ 1.399s] 08 START | acquire elapsed=86.752ms | start interval=201.019ms | main
+[ 1.517s] 08 END
+[ 1.601s] 09 START | acquire elapsed=82.891ms | start interval=201.128ms | main
+[ 1.721s] 09 END
+[ 1.799s] 10 START | acquire elapsed=77.229ms | start interval=198.170ms | main
+[ 1.911s] 10 END
+
+=== Guava SmoothBursty | API=300ms | idle=false ===
+[ 0.000s] 01 START | acquire elapsed=0.010ms | start interval=0.000ms | main
+[ 0.308s] 01 END
+[ 0.309s] 02 START | acquire elapsed=0.018ms | start interval=308.743ms | main
+[ 0.616s] 02 END
+[ 0.618s] 03 START | acquire elapsed=0.021ms | start interval=309.683ms | main
+[ 0.925s] 03 END
+[ 0.926s] 04 START | acquire elapsed=0.010ms | start interval=307.159ms | main
+[ 1.233s] 04 END
+[ 1.233s] 05 START | acquire elapsed=0.022ms | start interval=307.560ms | main
+[ 1.549s] 05 END
+[ 1.550s] 06 START | acquire elapsed=0.012ms | start interval=316.444ms | main
+[ 1.854s] 06 END
+[ 1.854s] 07 START | acquire elapsed=0.010ms | start interval=304.573ms | main
+[ 2.159s] 07 END
+[ 2.159s] 08 START | acquire elapsed=0.009ms | start interval=304.848ms | main
+[ 2.466s] 08 END
+[ 2.466s] 09 START | acquire elapsed=0.011ms | start interval=306.946ms | main
+[ 2.771s] 09 END
+[ 2.771s] 10 START | acquire elapsed=0.010ms | start interval=305.269ms | main
+[ 3.076s] 10 END
+
+=== Failsafe Smooth | API=300ms | idle=false ===
+[ 0.000s] 01 START | acquire elapsed=0.004ms | start interval=0.000ms | main
+[ 0.305s] 01 END
+[ 0.305s] 02 START | acquire elapsed=0.007ms | start interval=305.210ms | main
+[ 0.613s] 02 END
+[ 0.614s] 03 START | acquire elapsed=0.013ms | start interval=308.687ms | main
+[ 0.919s] 03 END
+[ 0.919s] 04 START | acquire elapsed=0.008ms | start interval=305.375ms | main
+[ 1.226s] 04 END
+[ 1.228s] 05 START | acquire elapsed=0.008ms | start interval=308.470ms | main
+[ 1.536s] 05 END
+[ 1.536s] 06 START | acquire elapsed=0.008ms | start interval=308.295ms | main
+[ 1.841s] 06 END
+[ 1.842s] 07 START | acquire elapsed=0.010ms | start interval=305.879ms | main
+[ 2.150s] 07 END
+[ 2.151s] 08 START | acquire elapsed=0.013ms | start interval=308.724ms | main
+[ 2.455s] 08 END
+[ 2.455s] 09 START | acquire elapsed=0.007ms | start interval=304.344ms | main
+[ 2.764s] 09 END
+[ 2.764s] 10 START | acquire elapsed=0.013ms | start interval=308.813ms | main
+[ 3.071s] 10 END
+
+=== Guava SmoothBursty | API=300ms | idle=true ===
+[ 0.000s] 01 START | acquire elapsed=0.013ms | start interval=0.000ms | main
+[ 0.305s] 01 END
+[ 0.305s] 02 START | acquire elapsed=0.011ms | start interval=305.467ms | main
+[ 0.613s] 02 END
+[ 0.613s] 03 START | acquire elapsed=0.016ms | start interval=307.601ms | main
+[ 0.918s] 03 END
+[ 0.918s] 04 START | acquire elapsed=0.011ms | start interval=304.720ms | main
+[ 1.227s] 04 END
+[ 1.232s] 05 START | acquire elapsed=0.012ms | start interval=313.831ms | main
+[ 1.536s] 05 END
+[ 1.536s] 06 START | acquire elapsed=0.011ms | start interval=304.788ms | main
+[ 1.854s] 06 END
+[ 1.854s] 07 START | acquire elapsed=0.010ms | start interval=317.747ms | main
+[ 2.173s] 07 END
+[ 2.174s] 08 START | acquire elapsed=0.018ms | start interval=319.615ms | main
+[ 2.491s] 08 END
+[ 2.491s] 09 START | acquire elapsed=0.020ms | start interval=317.062ms | main
+[ 2.808s] 09 END
+[ 2.808s] 10 START | acquire elapsed=0.015ms | start interval=317.310ms | main
+[ 3.125s] 10 END
+
+=== Failsafe Smooth | API=300ms | idle=true ===
+[ 0.000s] 01 START | acquire elapsed=0.012ms | start interval=0.000ms | main
+[ 0.316s] 01 END
+[ 0.317s] 02 START | acquire elapsed=0.007ms | start interval=316.616ms | main
+[ 0.631s] 02 END
+[ 0.631s] 03 START | acquire elapsed=0.015ms | start interval=314.816ms | main
+[ 0.945s] 03 END
+[ 0.945s] 04 START | acquire elapsed=0.007ms | start interval=313.623ms | main
+[ 1.261s] 04 END
+[ 1.262s] 05 START | acquire elapsed=0.008ms | start interval=316.550ms | main
+[ 1.577s] 05 END
+[ 1.577s] 06 START | acquire elapsed=0.007ms | start interval=315.385ms | main
+[ 1.895s] 06 END
+[ 1.895s] 07 START | acquire elapsed=0.008ms | start interval=317.987ms | main
+[ 2.209s] 07 END
+[ 2.209s] 08 START | acquire elapsed=0.012ms | start interval=314.429ms | main
+[ 2.527s] 08 END
+[ 2.527s] 09 START | acquire elapsed=0.007ms | start interval=317.726ms | main
+[ 2.841s] 09 END
+[ 2.841s] 10 START | acquire elapsed=0.013ms | start interval=313.812ms | main
+[ 3.159s] 10 END
+
+=== SUMMARY (start interval excludes response completion of last request) ===
+Limiter | server delay | idle | first interval | avg interval | total
+Guava SmoothBursty | 100ms | false | 205.741ms | 199.357ms | 1.904s
+Failsafe Smooth | 100ms | false | 202.404ms | 200.111ms | 1.913s
+Guava SmoothBursty | 100ms | true | 114.626ms | 112.886ms | 1.127s
+Failsafe Smooth | 100ms | true | 198.858ms | 199.860ms | 1.911s
+Guava SmoothBursty | 300ms | false | 308.743ms | 307.914ms | 3.077s
+Failsafe Smooth | 300ms | false | 305.210ms | 307.088ms | 3.071s
+Guava SmoothBursty | 300ms | true | 305.467ms | 312.015ms | 3.125s
+Failsafe Smooth | 300ms | true | 316.616ms | 315.660ms | 3.160s
